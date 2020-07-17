@@ -1,4 +1,4 @@
-# 0x00. Advanced HTML
+<p align="center"><img src="https://github.com/felipesv/holbertonschool-web_front_end/blob/master/0x00-html_advanced/header_0x00.png" alt="diagrama"></a></p>
 
 ## Description
 What you should learn from this project:
