@@ -1,0 +1,4 @@
+html {
+	/* set the scroll behavior with a timing */
+	scroll-behavior: smooth;
+}
