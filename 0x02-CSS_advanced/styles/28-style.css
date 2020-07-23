@@ -345,7 +345,7 @@ ul .footer {
 }
 
 /* all elements with attribute data-section-theme="dark" */
-[data-section-theme=“dark”] {
+[data-section-theme="dark"] {
 	/* set vales of some variables */
 	--text-color: var(--color-white);
 	--section-title-color: var(--color-white);
