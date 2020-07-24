@@ -544,7 +544,7 @@ ul .footer {
 }
 
 /* all elements with tag a inside all elements with class card-title inside the all elements with class card-work */
-.car-work .card-title a {
+.card-work .card-title a {
 	/* set the display */
 	display: block;
 	/* set the decoration */
@@ -554,7 +554,7 @@ ul .footer {
 }
 
 /* all elements after the elements with tag a inside all elements with class card-title inside the all elements with class card-work */
-.car-work .card-title a::after {
+.card-work .card-title a::after {
 	position: absolute;
 	/* set the top, the position of the element according its top edge */
 	top: 0;
