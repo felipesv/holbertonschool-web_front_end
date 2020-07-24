@@ -48,7 +48,7 @@ body {
 /* all title elements */
 h1, h2, h3, h4, h5, h6 {
 	/* set the font family (letter type)*/
-	font-size: var(--font-family-title);
+	font-family: var(--font-family-title);
 	/* set the font weight (boldness type)*/
 	font-weight: var(--font-weight-bold);
 }
