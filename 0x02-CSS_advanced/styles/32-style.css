@@ -617,7 +617,7 @@ ul.row {
 	transition: var(--transition-duration) var(--transition-cubic-bezier);
 }
 
-.card-work:hover .card-oute {
+.card-work:hover .card-outer {
 	/* set the transform, how the elemetn is transformed */
 	transform: scale(0.95);
 }
