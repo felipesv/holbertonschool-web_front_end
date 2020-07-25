@@ -398,8 +398,8 @@ ul.row {
 	text-align: center;
 }
 
-/* all elements with class card-avatar */
-.card-avatar {
+/* all elements with class.card-testimonial .card-testimonial .card-avatar */
+.card-testimonial .card-testimonial .card-avatar {
 	/* set the border style */
 	border-radius: 50%;
 	/* set the width according with root element */
