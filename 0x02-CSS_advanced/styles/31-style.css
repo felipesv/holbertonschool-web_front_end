@@ -345,7 +345,7 @@ ul.row {
 }
 
 /* all elements with class footer inside ul tag */
-ul .footer {
+.footer ul {
 	/* set the text align  */
 	text-align: right;
 }
