@@ -146,7 +146,7 @@ a:active {
 	/* set the text decorarion to none */
 	text-decoration: var(--button-hover-text-decoration);
 	/* set the background color */
-	background-color: var(--button-hover-background);
+	background: var(--button-hover-background);
 }
 
 /* all elements with class visually-hidden */
