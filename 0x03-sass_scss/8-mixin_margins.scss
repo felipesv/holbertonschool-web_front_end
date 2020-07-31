@@ -1,14 +1,13 @@
 /* Margin mixin */
-@mixin marginLeftRight {
-	margin-left: 10px;
-	margin-right: 10px;
+@mixin marginLeftRight($arg) {
+	margin-left: $arg;
+	margin-right: $arg;
 }
 
 body {
-	@include marginLeftRight;
+	@include marginLeftRight(10px);
 }
 
 div {
-	margin-left: 15px;
-	margin-right: 15px;
+	@include marginLeftRight(15px);
 }
