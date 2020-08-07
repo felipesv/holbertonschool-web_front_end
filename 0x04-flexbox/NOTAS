@@ -1,0 +1,82 @@
+PROPIEDADES POSIBLES PARA EL CONTENEDOR
+
+display: flex | inline-flex;
+	poner un contenedor para que se flexible
+
+flex-direction: row | column | row-reverse | column-reverse;
+	direccion en la cual se va a posicionar las cajas. row va por default.
+	row-reverse: comineza de derecha a izquierda. antes: 1 2 3 4, despues: 4 3 2 1
+	column: pone los item en columnas una bajo la otra
+	column-reverse: pone los item en columnas una bajo la otra comenzando de abajo hacia arriba
+
+flex-wrap: wrap | no-wrap | wrap-reverse;
+	wrap: adapta los items como en una linea nueva si su suma pasa el ancho de su contenedor.
+	no-wrap: adapta el ancho de los item al ancho del contenedor de manera proporcional quedando 
+	  todos en linea si pasan el ancho del contenedor.
+	wrap-reverse: muestra los elementos de abajo hacia arriba de izquierda a derecha.
+
+flex-flow: <flex-direccion> | <flex-wrap>;
+	con esta propiedad se toman dos valores la primera pertenece al flex-direccion y la segunda al flex-wrap.
+
+justify-content: flex-start | flex-end | center | space-around | space-between;
+	decidir la posicion de los elementos y la distribucion
+	flex-start: por default. es poner los item justificados a la izquierda o al inicio
+	flex-end: poner los items justificados a la derecha o al final sin alteral el orden de los elementos
+	center: centrar todo los item horizontalmente
+	space-around: posiciona los elementos en todo el ancho del contenedor, dejando como margenes o espacios
+	  entre cada item de igual tamaño. Espacio al inicio, al final y entre items
+	space-between: es igual que el space around pero los espacios del incio y del final no los toma, los deja
+	  sin espacio sin margenes. Es como que divide y va colocando justificados a la izquierda y a la derecha
+
+align-items: flex-start | flex-end | center | stretch | baseline;
+	posicion todos los elementos de manera verticalmente y solo funciona cuando es una linea de items
+	flex-start: por default. pone los items dentro del contenedor hacia arriba
+	flex-end: pone los items del contenedor hacia abajo en el piso del contenedor
+	center: centrar los items verticalmente
+	stretch: Para que se vea el efecto debe tener un height automatico en cada item o los que quiera afectar.
+	  lo que hace es alargar los height de cada item ajustandolos al tamaño del contenedor.
+	baseline: alinea las fuentes, si se tiene un item con fuente mayor a otro el baseline pone todos los item en la
+	  misma linea por ejemplo  ---_--- y con baseline _ _ _ _ _. es como escribir sobre una linea sin importar que 
+	  tan grande sea la letra en determinados casos.
+
+align-content: flex-start | flex-end | center | stretch | space-between | space-around;
+	lo mismo que el align-item pero esta vez como que se agrupa los items sin dejar grandes margenes entre ellos, como
+	  si se tuviera un wrap y que los items de segunda linea no estuvieran separados de la primera linea si no uno 
+	  sobre otro
+	flex-start: valor por default. junta los items en la parte superior del contenedor.
+	flex-end:junta los items en la parte inferior del contenedor
+	center: junta los items las dos lineas en el centro del contenedor
+	stretch: 
+	space-between: divide la cantidad de lineas y pone una cantidad en la parte superios y otra en la parte inferior
+	  sin espacios en las margenes superior inicial e inferior final (techo y el piso)
+	space-around: igual que el space between pero con los espacios al incio superior y al final inferior
+	
+PROPIEDADES POSIBLES PARA LOS ITEMS
+
+flex-basis: <cualquier valor numerico con medida especificada>;
+	es como si se maneja un width o el height y se usa de manera dinamica dependiendo de la orientacion de
+	  los elementos, si estan como columnas o filas para que toma alto o ancho
+
+flex-grow: <cualquier valor numerico>;
+	indicar cuanto se quiere que un item crezca en proporcion a los demas
+
+flex-shrink: <cualquier valor numerico>;
+	indicar cuanto se uqiere que un item de haga mas pequeño en proporcion a los demas
+
+flex: <valor> | <valor> <valor> <valor> | ;
+	cuando se le pasa un solo valor esta especificando flex-grow y flex-shrink con el mismo valor.
+	cuando se le pasan tres valores, el primero el flex-grow, luego el flex-shrink y el ultimo al flex-basis;
+
+order: <valor>;
+	establece en que orden va a quedar el item dentro de los items que estan dentro del contenedor
+
+align-self: flex-start | flex-end | center | stretch | baseline;
+	alinear vertical si es filas o horizontal si es columnas a un solo item
+	flex-start: alineado a la parte superior
+	flex-end: alineado a la parte inferior
+	center: centrado en todo el contenedor
+	stretch: debe tener  un height auto para que tome el height total del contenedor
+	baseline: alineado con las fuentes
+
+
+https://www.youtube.com/watch?v=F-KCncXMPk0
