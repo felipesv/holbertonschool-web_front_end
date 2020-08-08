@@ -699,7 +699,7 @@
     padding: 0 0 .5rem;
 	}
 	
-	input[type=text], input[type=email], textarea {
+	input[type="text"], input[type="email"], textarea {
     position: relative;
     width: 100%;
     padding: 1.2rem;
@@ -710,11 +710,11 @@
     outline: 0;
   }
 
-  input[type=text], input[type=email] {
+  input[type="text"], input[type="email"] {
     padding-right: 3rem;
   }
 
-  input[type=text]:focus, input[type=email]:focus, textarea:focus {
+  input[type="text"]:focus, input[type="email"]:focus, textarea:focus {
     border: .1rem solid var(--color-grey);
   }
 
@@ -833,7 +833,7 @@
     height: 1.5rem;
   }
 
-  .form-search input[type=search] {
+  .form-search input[type="search"] {
     display: inline-block;
     color: var(--color-white);
     padding-right: 2rem;
@@ -849,7 +849,7 @@
     transition: width .4s cubic-bezier(0, 0.795, 0, 1);
   }
 
-  .form-search input[type=search]:focus {
+  .form-search input[type="search"]:focus {
     position: relative;
     width: 15rem;
     z-index: 1;
