@@ -1,0 +1,21 @@
+source to generate images with responsive breakpoints https://www.responsivebreakpoints.com/
+	sizes
+	srcset
+
+
+TASGS
+	meta tag:
+		- viewport: * when we use the width=device-width, force the browser to adopt their
+			real viewport width in the mobiles devices
+			* when use initial-scale=1, say to the browser that the relationship between css pixel and 
+			devices-independet pixel (dpi) are 1:1
+			<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+
+CSS
+	box-sizing: border-box; - padding and border are included in the width and height:
+	background-position: sets the starting position of a background image.
+
+
+MEDIA QUERY
+	only: The only keyword prevents older browsers that do not support media queries with media features 
+		from applying the specified styles. It has no effect on modern browsers.
