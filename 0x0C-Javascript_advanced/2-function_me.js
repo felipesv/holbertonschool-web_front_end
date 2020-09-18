@@ -1,5 +1,5 @@
 /*
-
+	alert Welcome <name> with Closure
 */
 function welcomeMessage(fullName) {
 	return function () {
