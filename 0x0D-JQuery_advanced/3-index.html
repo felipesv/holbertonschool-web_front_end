@@ -19,12 +19,20 @@
           $("table").append("<tbody></tbody>");
           /*DATA HEAD*/
           $("thead").append("<tr></tr>");
-          $("thead > tr").append("<th>Firstname</th>");
-          $("thead > tr").append("<th>Lastname</th>");
+          $("thead > tr").append("<th></th>", "<th></th>");
+          $("tr > th:first-child").append("Firstname");
+          $("tr > th:last-child").append("Lastname");
           /*DATA BODY*/
-          $("tbody").append("<tr><td>Guillaume</td><td>Salva</td></tr>");
-          $("tbody").append("<tr><td>Paulette</td><td>Salva</td></tr>");
-          $("tbody").append("<tr><td>Antoine</td><td>Salva</td></tr>");
+          $("tbody").append("<tr></tr>", "<tr></tr>", "<tr></tr>");
+          $("tbody > tr:nth-child(1)").append("<td></td>", "<td></td>");
+          $("tbody > tr:nth-child(2)").append("<td></td>", "<td></td>");
+          $("tbody > tr:nth-child(3)").append("<td></td>", "<td></td>");
+          $("tbody > tr:nth-child(1) > td:nth-child(1)").append("Guillaume");
+          $("tbody > tr:nth-child(1) > td:nth-child(2)").append("Salva");
+          $("tbody > tr:nth-child(2) > td:nth-child(1)").append("Paulette");
+          $("tbody > tr:nth-child(2) > td:nth-child(2)").append("Salva");
+          $("tbody > tr:nth-child(3) > td:nth-child(1)").append("Antoine");
+          $("tbody > tr:nth-child(3) > td:nth-child(2)").append("Salva");
         }
 
         createFamilyTree();
