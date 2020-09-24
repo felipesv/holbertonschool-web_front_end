@@ -14,34 +14,29 @@
            Creating multiple DOM elements at once 
         */
         function createFamilyTree() {
-          let header = ["Firstname", "Lastname"];
-          let dataName = ["Guillaume", "Paulette", "Antoine"];
-          let dataLast = "Salva";
           let table = "";
 
           table = 
             "<table>" +
               "<thead>" +
-                "<tr>";
-
-          header.forEach(item => {
-            table += "<th>" + item + "</th>";
-          });
-
-          table += 
+                "<tr>" +
+                  "<th>Firstname</th>" +
+                  "<th>Lastname</th>" +
                 "</tr>" +
               "</thead>" +
-              "<tbody>";
-
-          dataName.forEach(item => {
-            table += 
-              "<tr>" +
-                "<td>" + item + "</td>" +
-                "<td>" + dataLast + "</td>" +
-              "</tr>";
-          });
-
-          table += 
+              "<tbody>" +
+                "<tr>" +
+                  "<td>Guillaume</td>" +
+                  "<td>Salva</td>" +
+                "</tr>" +
+                "<tr>" +
+                  "<td>Paulette</td>" +
+                  "<td>Salva</td>" +
+                "</tr>" +
+                "<tr>" +
+                  "<td>Antoine</td>" +
+                  "<td>Salva</td>" +
+                "</tr>" +
               "</tbody>" +
             "</table>";
 
