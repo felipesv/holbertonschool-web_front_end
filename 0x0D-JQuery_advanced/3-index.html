@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+    <head>
+
+        <meta charset="utf-8" />
+        <title>Task 0</title>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs=" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+      <script type="application/javascript">
+        /*
+          Chain DOM elements
+        */
+        function createFamilyTree() {
+          $("body").append("<table></table>");
+          $("table").append("<thead></thead>");
+          $("table").append("<tbody></tbody>");
+          /*DATA HEAD*/
+          $("thead").append("<tr></tr>");
+          $("thead > tr").append("<th>Firstname</th>");
+          $("thead > tr").append("<th>Lastname</th>");
+          /*DATA BODY*/
+          $("tbody").append("<tr><td>Guillaume</td><td>Salva</td></tr>");
+          $("tbody").append("<tr><td>Paulette</td><td>Salva</td></tr>");
+          $("tbody").append("<tr><td>Antoine</td><td>Salva</td></tr>");
+        }
+
+        createFamilyTree();
+      </script>
+    </body>
+
+</html>
